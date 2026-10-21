@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Rich's Midterm Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="text-align: center;">
+    <div class="card-container">
+
+        <header>
+            <h1>Rich's Midterm Portfolio</h1>
+            <nav>
+                <a href="indx.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="media.html">Media</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <hr class="header-divider">
+
+  
+        <main>
+            
+            <div class="profile-container">
+                <img src="499268397_17914146636130941_3944231971770872277_n.jpg" alt="Profile picture of John Doe" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+            </div>
+            
+            <h2>About Me</h2>
+            
+            <p>My name is Rich, and I am an Computer Science student dedicated to mastering front-end web development principles. Below are my core focus areas:</p>
+            
+            <ul>
+                <li><strong>Semantic HTML Structuring:</strong> Writing clean and accessible markup.</li>
+                <li><strong>CSS Layout Optimization:</strong> Building centered layouts without frameworks.</li>
+                <li><strong>WCAG & Usability Standards:</strong> Ensuring accessibility and proper contrast.</li>
+            </ul>
+        </main>
+    </main>
+    <div style="text-align: center; margin-bottom: 25px;">
+    <hr class="footer-divider"><footer>
+        <p>&copy; Developed by Rich| HUMAN-COMPUTER INTERACTION</p>
+    </footer>
+</div>
+
+
+<script>
+    const links = document.querySelectorAll('.nav-link');
+    const tabs = document.querySelectorAll('.tab-content');
+
+    links.forEach(link => {
+        link.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+        
+            links.forEach(l => l.classList.remove('active'));
+            tabs.forEach(t => t.classList.remove('active-tab'));
+            
+           
+            link.classList.add('active');
+            const targetId = link.getAttribute('href');
+            document.querySelector(targetId).classList.add('active-tab');
+        });
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rich's Midterm Portfolio</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    });
+</script>
+</div>
+
+</body>
+
+</html>
+    </div>
+        <hr class="footer-divider">

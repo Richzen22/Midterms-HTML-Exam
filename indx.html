@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Rich's Midterm Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div style="text-align: center;">
+    <div class="card-container">
+        <header>
+            <div class="header-title">Rich's Midterm Portfolio</div>
+            <div style="text-align: center;">
+            <nav>
+                <a href="indx.html" class="active">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="media.html">Media</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        
+        <hr class="header-divider">
+
+        <main class="content-layout">
+            <section class="left-column">
+                <img src="564923504_17927581320130941_305460304733356604_n.jpg" alt="Profile picture of John Doe" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+                <h1>Welcome Home</h1>
+                <p>Welcome to my midterm laboratory project. This site is built using separate HTML pages to display distinct views clearly. By utilizing semantic HTML tags and custom CSS layout properties, information is presented in a balanced and accessible structure.</p>
+            </section>
+            
+            <section class="right-column">
+                <p>My name is Rich, and my core focus in front-end web development involves three main areas:</p>
+                <ul>
+                    <li>Semantic HTML Structuring</li>
+                    <li>CSS Layout Optimization</li>
+                    <li>WCAG & Usability Standards</li>
+                </ul>
+            </section>
+        </main>
+
+        <hr class="footer-divider">
+
+
+    
+        <footer>
+            <p>&copy; Developed by Rich| HUMAN-COMPUTER INTERACTION</p>
+        </footer>
+    </div>
+
+
+    <script>
+        const links = document.querySelectorAll('.nav-link');
+        const tabs = document.querySelectorAll('.tab-content');
+
+        links.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                
+            
+                links.forEach(l => l.classList.remove('active'));
+                tabs.forEach(t => t.classList.remove('active-tab'));
+                
+               
+                link.classList.add('active');
+                const targetId = link.getAttribute('href');
+                document.querySelector(targetId).classList.add('active-tab');
+            });
+            <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rich's Midterm Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+        });
+    </script>
+    </div>
+
+</body>
+
+</html>
